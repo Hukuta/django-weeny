@@ -1,0 +1,32 @@
+{% load i18n %}{% load static from staticfiles %}<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% trans "URL Shortener" %}{% endblock %}</title>
+    <link href="{% static "weeny/css/weeny.css" %}" rel="stylesheet"/>
+</head>
+<body>
+
+<form method="post" id="create-url-form" action="">{% csrf_token %}
+    <fieldset>
+        <h1>{% trans "URL Shortener" %}</h1>
+
+        {% if object %}
+            <div class="fieldset-row">
+            <h3>{% trans "Short URL" %}:</h3>
+                {{ short }}
+            </div>
+            <div class="fieldset-row">
+            <a href="{{ request.path }}">{% trans "Simplify another URL" %}</a>
+            </div>
+        {% else %}
+            <div class="fieldset-row">
+                {{ form.as_p }}
+            </div>
+            <div class="fieldset-row">
+                <input id="weeny-auth-form-submit" type="submit" value="{% trans "Shorten URL" %}">
+            </div>
+        {% endif %}
+    </fieldset>
+</form>
+</body>
+</html>
