@@ -1,9 +1,1 @@
-Django>=1.5.0
-PyYAML
-South
-Sphinx
-coverage
-gnureadline
-six
-ua-parser
-user-agents
+Django>=1.9.0

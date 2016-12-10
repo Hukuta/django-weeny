@@ -8,7 +8,7 @@ body {
     background: #eee;
 }
 
-#weeny-auth-form fieldset {
+#create-url-form fieldset {
     background: #fff;
     border: 1px solid #ccc;
     width: 28rem;
@@ -16,13 +16,13 @@ body {
     margin: 100px auto;
 }
 
-#weeny-auth-form fieldset .fieldset-row {
+#create-url-form fieldset .fieldset-row {
     padding: 1rem 0;
     float: left;
     width: 100%;
 }
 
-#weeny-auth-form fieldset .fieldset-row label {
+#create-url-form fieldset .fieldset-row label {
     padding-right: 0.5rem;
     line-height: 2rem;
     font-size: 1rem;
@@ -30,7 +30,7 @@ body {
     color: #333;
 }
 
-#weeny-auth-form fieldset .fieldset-row #id_password {
+#create-url-form fieldset .fieldset-row #id_url {
     clear: both;
     padding: 6px;
     width: 100%;
@@ -41,7 +41,11 @@ body {
             box-sizing: border-box;
 }
 
-#weeny-auth-form fieldset input[type="submit"] {
+#create-url-form {
+    text-align: center;
+}
+
+#create-url-form fieldset input[type="submit"] {
     margin: 0 auto;
     display: block;
     color: black;
@@ -54,7 +58,7 @@ body {
     min-width: 3.5rem;
 }
 
-#weeny-auth-form fieldset input[type="submit"]:active {
+#create-url-form fieldset input[type="submit"]:active {
     background: url(../img/nav-bg-reverse.gif) top;
 }
 
